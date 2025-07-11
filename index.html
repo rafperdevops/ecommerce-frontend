@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario JS</title>
+    <script src="js/funciones.js"></script>
+</head>
+
+<body>
+    <h2>Productos</h2>
+    <form action="" id="formProduct">
+        <label for="">id</label> <br>
+        <input type="text" id="txtId" name="id"> <br>
+        <label for="">Nombre</label> <br>
+        <input type="text" id="txtNombre" name="name"> <br>
+        <label for="">Stock</label> <br>
+        <input type="text" id="txtStock" name="stock"> <br>
+        <label for="">Precio</label> <br>
+        <input type="text" id="txtPrecio" name="price"> <br><br>
+        <label for="">Imagen</label> <br>
+        <input type="file" id="txtImagen" name="image" accept="image/*" required> <br><br>
+        <input type="button" value="Guardar" onclick="save()">
+        <input type="button" value="Consultar" onclick="get()">
+        <input type="button" value="Eliminar" onclick="eliminar()">
+        <input type="button" value="Actualizar" onclick="update()">
+        <input type="button" value="Listar" onclick="listar()">
+    </form>
+
+    <h2>Productos disponibles</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Stock</th>
+                <th>Imagen</th>
+            </tr>
+        <tbody id="productList">
+
+        </tbody>
+        </thead>
+    </table>
+    <button type="button" onclick="realizarPedido()">Realizar pedido</button>
+</body>
+
+</html>
