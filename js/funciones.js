@@ -1,4 +1,4 @@
-const URL_API = "https://backend-ecommerce-p9qe.onrender.com";
+const URL_API = "http://52.228.78.72:8080";
 function save() {
     const form = document.getElementById("formProduct");
     const formData = new FormData(form);
